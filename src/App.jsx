@@ -1,7 +1,13 @@
+import { Header } from "./components/Header"
+import { Education } from "./components/Education"
+import { Work } from "./components/Work"
+
 function App() {
   return (
     <>
-      <h1>Hello Word!</h1>
+      <Header />
+      <Education />
+      <Work />
     </>
   )
 }
