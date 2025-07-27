@@ -4,7 +4,7 @@ export function InputElement({value, fun}) {
             <input 
                 type="text"
                 value={value}
-                fun={fun}
+                onChange={fun}
             />
         </>
     )
