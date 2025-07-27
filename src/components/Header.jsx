@@ -1,8 +1,10 @@
 import { useState } from "react"
 import { InputElement } from "./InputElement";
+import { Person } from "./Person";
 
 export function Header() {
-    const [person, setPerson] = useState({firstName: "Alex", lastName: "Buly", education: "Marshall University"});
+    const personFunction = Person();
+    const [person, setPerson] = useState({firstName: personFunction.getFirstName(), lastName: personFunction.getLastName()});
     const [fullName, setFullName] = useState(person.firstName + ' ' + person.lastName);
     const [isVisible, setIsVisible] = useState(false);
 

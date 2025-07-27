@@ -1,8 +1,11 @@
+import { Person } from "./Person"
+
 export function Work() {
+    const person = Person();
     return (
         <>
-            <h3>Desk Assistant</h3>
-            <p>2024-2025</p>
+            <h3>{person.getWork()}</h3>
+            <p>{person.getYears()}</p>
         </>
     )
 }
