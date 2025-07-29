@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 1em;
+    background-color: rgb(41, 41, 146);
+    color: white;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.app {
+    background-color: beige;
+    width: 50%;
+    border: 3px solid black;
+    padding: 1em;
+}
+
+.info-heading, .education-heading, .experience-heading {
+    text-align: center;
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .app {
+        width: 100%;
+    }
+}
