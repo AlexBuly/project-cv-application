@@ -6,11 +6,13 @@ import { Experience } from "./components/Experience";
 function App() {
   return (
     <>
+     <h1>CV Application</h1>
     <div className="container">
-      <h1>CV Application</h1>
-       <GeneralInfo/>
-       <Education/>
-       <Experience/>
+      <div className="app">
+        <GeneralInfo/>
+        <Education/>
+        <Experience/>
+      </div>
     </div>
     </>
   )
