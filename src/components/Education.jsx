@@ -23,8 +23,8 @@ export function Education() {
   };
 
   return (
-    <div className="section">
-        <h2>Education</h2>
+    <div className="education">
+        <h2 className="education-heading">Education</h2>
         {isEditing ? (
             <form onSubmit={handleSubmit}>
                 <FormInput name={"school"} value={education.school} onChange={handleChange} placeholder={"School Name"}/>

@@ -25,8 +25,8 @@ export function Experience() {
     }
 
     return (
-        <div className="section">
-            <h2>Experience</h2>
+        <div className="experience">
+            <h2 className="experience-heading">Experience</h2>
             {isEditing ? (
                 <form onSubmit={handleSubmit}>
                     <FormInput name={"company"} value={experience.company} onChange={handleChange} placeholder={"Company Name"}/>
@@ -37,7 +37,7 @@ export function Experience() {
                     <button type="submit">Submit</button>
                 </form>
             ) : (
-                  <div>
+                <div>
                     <p><strong>Company:</strong> {experience.company}</p>
                     <p><strong>Position:</strong> {experience.position}</p>
                     <p><strong>Responsibilities:</strong> {experience.responsibilities}</p>

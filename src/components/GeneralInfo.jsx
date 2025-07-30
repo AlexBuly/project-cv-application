@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { FormInput } from "./FromInput";
+import { FormInput } from "./FormInput";
 
 export default function GeneralInfo() {
-    const [isEditing, setIsEditing] = useState(true);
+    const [isEditing, setIsEditing] = useState(false);
     const [info, setInfo] = useState({
         name: "Alex Buly",
         email: "myemail@example.com",
@@ -23,8 +23,8 @@ export default function GeneralInfo() {
     };
 
     return (
-        <div className="section">
-            <h2>General Information</h2>
+        <div className="general-info">
+            <h2 className="info-heading">General Information</h2>
             {isEditing ? (
                 <form onSubmit={handleSubmit}>
                 <FormInput name={"name"} value={info.name} onChange={handleChange} placeholder={"Name"}/>
@@ -33,11 +33,11 @@ export default function GeneralInfo() {
                 <button type="submit">Submit</button>
                 </form>
             ) : (
-                <div>
-                <p><strong>Name:</strong> {info.name}</p>
-                <p><strong>Email:</strong> {info.email}</p>
-                <p><strong>Phone:</strong> {info.phone}</p>
-                <button onClick={handleEdit}>Edit</button>
+                <div className="info-section">
+                    <p><strong>Name:</strong> {info.name}</p>
+                    <p><strong>Email:</strong> {info.email}</p>
+                    <p><strong>Phone:</strong> {info.phone}</p>
+                    <button onClick={handleEdit}>Edit</button>
                 </div>
             )}
         </div>
