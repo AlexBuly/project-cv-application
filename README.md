@@ -1,12 +1,6 @@
-# React + Vite
+In this project, I created a React app that can generate a resume. The sections of the resume split into individual components and are set using the React useState hook. First, each component contains a state variable. This variable is turned into an object. Each property in the object is set using a function passed into the state array. Initial, this object is given default properties. These properties are changed by for each property name, set the new name to be an input value.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The app contains an edit button to edit each property. The initial state of the an isEditing variable is false. When the edit button is clicked, it turns to true. When isEditing is true, the inputs to change each property in the component are display. When it is false, the values from the input are displayed as text. 
 
-Currently, two official plugins are available:
+The final function that updates the state is handleSubmit(). This makes isEditing become false. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
