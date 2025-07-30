@@ -7,7 +7,14 @@ button {
     border-radius: 1em;
     background-color: rgb(41, 41, 146);
     color: white;
+}
 
+button:hover {
+    background-color: rgb(26, 26, 92);
+}
+
+button:active {
+    background-color: black;
 }
 
 h1 {
