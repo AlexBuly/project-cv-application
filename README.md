@@ -4,3 +4,4 @@ The app contains an edit button to edit each property. The initial state of the 
 
 The final function that updates the state is handleSubmit(). This makes isEditing become false. 
 
+Live available at: https://project-cv-application-eoo.pages.dev/
